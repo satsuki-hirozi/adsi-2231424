@@ -5,12 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>basic selectors</title>
+    <style>
+        *{
+            border: 1px dotted coral;
+            margin: 10px;
+            padding: 10px;
+        }
+        h2 {
+            background-color: coral;
+        }
+        p span {
+            background-color: deepskyblue;
+        }
+        .highlight{ 
+          background-color: lightgreen;
+        }
+        #elements03 {
+            background-color: crimson;
+            color: white;
+        }
+        div.box p.first{
+            background-color: black;
+            color: silver;
+        }
+    </style>
 </head>
 <body>
+    <h1>basic selector: </h1>
+    <hr>
     <h2>universal selector: *</h2>
+    <div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ducimus quidem eaque repellat fuga? Minima porro adipisci atque a eligendi omnis? Alias, enim ut aperiam totam autem ipsam amet accusamus!
+        </p>
+    </div>
     <h2>type/label selector: h2 </h2>
     <h2>desending selector: p span </h2>
-    <h2>class selector: .highigth </h2>
-    <h2> id selector: #elem01 </h2>
+    <div>
+        <p>
+            <span>Lorem ipsum dolor</span> sit amet consectetur, adipisicing elit. Dignissimos eum aliquam <span>quibusdam iusto temporibus doloribus quisquam</span>, optio vitae quaerat molestias ad cum officiis, quas, numquam accusamus! Dolorem, autem? Cupiditate, repellat.
+        </p>
+    </div>
+    <h2 class="highligth">class selector: .highlight </h2>
+    <h2>ID selector: #elem01</h2>
+    <ol>
+        <li id="elem01">element 1</li>
+        <li id="elem02">element 2</li>
+        <li id="elem03">element 3</li>
+        <li id="elem04">element 4</li>
+        <li id="elem05">element 5</li>
+    </ol>
+    <h2> combaine selector: div.box p.first </h2>
+    <div class="box">
+        <p class="first">lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+    </div>
 </body>
-</html>03-23-46:07
+</html>03-23-1:44
