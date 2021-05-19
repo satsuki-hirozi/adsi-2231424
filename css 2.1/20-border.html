@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        section.box{
+            border-color: #777;
+            border-style: solid;
+            height: 200px;
+            line-height: 10em;
+            margin: 40px auto;
+            text-align: center;
+            width: 400px;
+        }
+        section.box.box-width{
+            border-top-width: 10px;
+            border-right-width: 20px;
+            border-bottom-width: 10px;
+            border-left-width: 20px;
+            /* shorthand*/
+            border-width: 10px 20px;
+        }
+        section.box.box-style{
+            border-top-style: solid;
+            border-right-style: dotted;
+            border-left-style: double;
+            /* shorthand*/
+            border-style: solid dotted dashed double;
+        }
+        section.box.box-color{
+            border-width: 8px;
+            border-top-color: #ff0;
+            border-right-color: #00f;
+            border-bottom-color: #f00;
+            border-left-color: #f0f;
+            /* shorthand*/
+            background-color: #ff0 #00f #f00 #f0f;
+        }
+        section.box.box-all{
+            border-width: 6px;
+            border-style: dotted;
+            background-color: #808;
+            /* shorthand*/
+            border: 6px dotted #808;
+        }
+    </style>
+</head>
+<body>
+    <section class="box box-width">
+            <h2>ボーダー幅</h2>
+    </section>
+    <section class="box box-style">
+            <h2>ボーダースタイル</h2>
+    </section>
+    <section class="box box-color">
+            <h2>ボーダーカラー</h2>
+            <section class="box box-All">
+                <h2>ボーダーすべて</h2>
+    </section>
+</body>
+</html>
